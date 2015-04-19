@@ -37,7 +37,7 @@ def getTweet(user):
     soup = BeautifulSoup(data)
     ps = soup.find("p", class_="ProfileTweet-text")  
     if ps == None:
-        return "There is not tweets in this account"
+        return "There are not tweets in this account"
     else:
         return ps.text
 
